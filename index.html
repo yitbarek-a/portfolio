@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Yitbarek Alemu, MD</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- HEADER / HERO -->
+  <header class="bg-blue-900 text-white text-center py-12">
+    <h1 class="text-4xl font-bold">Dr. Yitbarek Alemu, MD</h1>
+    <p class="mt-2 text-lg">General Practitioner | Lifestyle & Preventive Medicine | Researcher</p>
+    <div class="mt-6">
+      <a href="docs/CV-placeholder.pdf" class="btn-primary mx-2">Download CV</a>
+      <a href="#contact" class="btn-secondary mx-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="max-w-3xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">About Me</h2>
+    <p>
+      I am a medical doctor and clinician-researcher with expertise in preventive neurology,
+      lifestyle medicine, and AI in healthcare. I translate complex medical research into actionable
+      guidance and have hands-on experience in protocol development, evidence synthesis, and
+      patient-centered programs.
+    </p>
+  </section>
+
+  <!-- CLINICAL STATS -->
+  <section class="bg-white py-10">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 px-4">
+      <div class="stat-card">
+        <div class="stat-value">11,000+</div>
+        <div class="stat-label">Patients Managed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">1.5+ Years</div>
+        <div class="stat-label">Clinical Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">5+</div>
+        <div class="stat-label">Research Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS GALLERY -->
+  <section class="max-w-5xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">Key Projects</h2>
+    <div id="project-filters" class="flex flex-wrap gap-2 mb-6"></div>
+    <div id="project-gallery" class="grid gap-6 sm:grid-cols-2 md:grid-cols-3"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-gray-100 py-10">
+    <div class="max-w-xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold text-blue-900 mb-4">Contact</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="input" required>
+        <input type="email" name="email" placeholder="Your Email" class="input" required>
+        <textarea name="message" rows="4" placeholder="Your Message" class="input" required></textarea>
+        <button type="submit" class="btn-primary w-full">Send Message</button>
+      </form>
+      <p class="text-sm text-gray-500 text-center mt-3">Or email me at <a href="mailto:youremail@example.com" class="text-blue-800 underline">youremail@example.com</a></p>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-white text-sm text-gray-500">
+    © 2025 Dr. Yitbarek Alemu. All Rights Reserved.
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
