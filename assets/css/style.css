@@ -1,0 +1,77 @@
+:root{
+  --primary:#0d47a1; /* deep-blue */
+  --accent:#009688;  /* teal */
+  --highlight:#ff6f61; /* coral */
+  --surface:#f8fafc;
+  --text:#0f172a;
+  --muted:#64748b;
+  --radius:12px;
+  --transition:200ms;
+}
+
+/* Utility for buttons */
+.btn-primary{
+  background:var(--primary);
+  color:white;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  display:inline-block;
+  text-decoration:none;
+  transition:transform var(--transition);
+}
+.btn-primary:hover{ transform:translateY(-2px); }
+.btn-secondary{
+  background:transparent;
+  border:1px solid var(--primary);
+  color:var(--primary);
+  padding:0.45rem 0.7rem;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+/* stat cards */
+.stat-card{
+  background:linear-gradient(180deg, rgba(13,71,161,0.06), transparent);
+  border-radius:10px;
+  padding:12px;
+  text-align:center;
+}
+.stat-value{ font-weight:700; color:var(--primary); font-size:1.05rem; }
+.stat-label{ font-size:0.85rem; color:var(--muted); }
+
+/* Filters */
+.filter-btn{
+  background:#fff;
+  border:1px solid #e6eef9;
+  padding:6px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:0.9rem;
+}
+.filter-btn.active{
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent);
+}
+
+/* project card */
+.project-card{
+  border-radius:12px;
+  padding:14px;
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  border:1px solid #eef6ff;
+  box-shadow: 0 4px 12px rgba(11,35,77,0.04);
+}
+.project-tags{ display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+.project-tag{ background:rgba(0,150,136,0.08); color:var(--accent); padding:4px 8px; border-radius:999px; font-size:0.8rem; }
+
+/* modal content */
+#modal{ z-index:60; }
+
+/* form inputs */
+.input{ border:1px solid #e6eef9; padding:10px; border-radius:8px; width:100%; }
+
+/* small responsiveness */
+@media (max-width:768px){
+  header div > div p{ font-size:0.9rem; }
+}
